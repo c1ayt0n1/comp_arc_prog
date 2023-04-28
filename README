@@ -1,0 +1,21 @@
+I ran "time ./bt.A.x" with 1,8,16,32,64,128,156 threads all labled as 12_<numthreads>.txt using these simple commands
+to compile/run the file I used 
+
+time ./bt.A.x
+
+without chnging anything it should run with whatever defaoult num of threads on your pc is
+to change the num of threads used:
+run
+nano ~/.bashrc
+
+then copy and paste this at the bottom of that file:
+
+#edit this to run nas benchmarck with diffrent number of threads
+#dont forget to run #source ~/.bashrc# to change the enviorment
+export OMP_NUM_THREADS=1
+
+then to update the enviorment run:
+
+source ~/.bashrc
+
+if you did it right you should see on the output the num of threads has changed 
