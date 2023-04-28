@@ -12,7 +12,7 @@ then copy and paste this at the bottom of that file:
 
 #edit this to run nas benchmarck with diffrent number of threads
 #dont forget to run #source ~/.bashrc# to change the enviorment
-export OMP_NUM_THREADS=1
+export OMP_NUM_THREADS=<num of threads you want>
 
 then to update the enviorment run:
 
